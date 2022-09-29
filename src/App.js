@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Certificate from "./components/Certificate";
+const short = require("short-uuid");
 function App() {
+  const data = {
+    title: "CERTIFICATE OF ACCEPTANCE",
+    id: short.generate(),
+    name: "Vivek Roy",
+    issueDate: "November, 2020",
+    expiryDate: "March 15, 2021",
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Certificate data={data} />
     </div>
   );
 }
