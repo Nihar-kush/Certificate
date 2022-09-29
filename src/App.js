@@ -5,7 +5,7 @@ function App() {
   const data = {
     title: "CERTIFICATE OF ACCEPTANCE",
     id: short.generate(),
-    name: "Vivek Roy",
+    name: "Nihar Kushwaha",
     issueDate: "November, 2020",
     expiryDate: "March 15, 2021",
   };
